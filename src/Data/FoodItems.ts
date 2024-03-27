@@ -1,0 +1,86 @@
+const nonVegFoods = [
+  { label: "Chicken breast", value: "Chicken breast" },
+  { label: "Turkey breast", value: "Turkey breast" },
+  { label: "Lean beef", value: "Lean beef" },
+  { label: "Salmon", value: "Salmon" },
+  { label: "Tuna", value: "Tuna" },
+  { label: "Shrimp", value: "Shrimp" },
+  { label: "Greek yogurt", value: "Greek yogurt" },
+  { label: "Cottage cheese", value: "Cottage cheese" },
+  { label: "Lean pork", value: "Lean pork" },
+  { label: "Cod", value: "Cod" },
+  { label: "Sardines", value: "Sardines" },
+  { label: "Lean ground beef", value: "Lean ground beef" },
+  { label: "Trout", value: "Trout" },
+  { label: "Haddock", value: "Haddock" },
+  { label: "Lamb", value: "Lamb" },
+  { label: "Venison", value: "Venison" },
+  { label: "Bison", value: "Bison" },
+  { label: "Duck breast", value: "Duck breast" },
+  { label: "Quail", value: "Quail" },
+  { label: "Goose", value: "Goose" },
+  { label: "Oysters", value: "Oysters" },
+  { label: "Crab", value: "Crab" },
+  { label: "Lobster", value: "Lobster" },
+  { label: "Clams", value: "Clams" },
+  { label: "Mussels", value: "Mussels" },
+  { label: "Pheasant", value: "Pheasant" },
+  { label: "Rabbit", value: "Rabbit" },
+  { label: "Boar", value: "Boar" },
+];
+
+export const highProteinVeganFoods = [
+  { label: "Tofu", value: "Tofu" },
+  { label: "Tempeh", value: "Tempeh" },
+  { label: "Seitan", value: "Seitan" },
+  { label: "Lentils", value: "Lentils" },
+  { label: "Chickpeas", value: "Chickpeas" },
+  { label: "Black beans", value: "Black beans" },
+  { label: "Kidney beans", value: "Kidney beans" },
+  { label: "Quinoa", value: "Quinoa" },
+  { label: "Green peas", value: "Green peas" },
+  { label: "Hemp seeds", value: "Hemp seeds" },
+  { label: "Chia seeds", value: "Chia seeds" },
+  { label: "Almonds", value: "Almonds" },
+  { label: "Peanuts", value: "Peanuts" },
+  { label: "Soy milk", value: "Soy milk" },
+  { label: "Soybeans", value: "Soybeans" },
+  { label: "Spinach", value: "Spinach" },
+  { label: "Broccoli", value: "Broccoli" },
+  { label: "Brussels sprouts", value: "Brussels sprouts" },
+  { label: "Seeds (pumpkin, sunflower)", value: "Seeds (pumpkin, sunflower)" },
+  { label: "Spirulina", value: "Spirulina" },
+  { label: "Nutritional yeast", value: "Nutritional yeast" },
+  { label: "Chickpea pasta", value: "Chickpea pasta" },
+  { label: "Plant-based protein powder", value: "Plant-based protein powder" },
+  {
+    label: "Plant-based milk (e.g., almond, oat, coconut)",
+    value: "Plant-based milk (e.g., almond, oat, coconut)",
+  },
+  { label: "Plant-based yogurt", value: "Plant-based yogurt" },
+  { label: "Plant-based cheese", value: "Plant-based cheese" },
+];
+
+const vegetarianFoods = [
+  { label: "Greek yogurt", value: "Greek yogurt" },
+  { label: "Cottage cheese", value: "Cottage cheese" },
+  { label: "Eggs", value: "Eggs" },
+  {
+    label: "Milk (dairy based)",
+    value: "Milk (dairy based)",
+  },
+  {
+    label: "Cheese (dairy based)",
+    value: "Cheese (dairy based)",
+  },
+];
+
+export const highProteinVegetarianFoods = [
+  ...highProteinVeganFoods,
+  ...vegetarianFoods,
+];
+export const highProteinNonVegetarianFoods = [
+  ...nonVegFoods,
+  ...highProteinVeganFoods,
+  ...vegetarianFoods,
+];
